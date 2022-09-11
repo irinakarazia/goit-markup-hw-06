@@ -315,7 +315,6 @@ font-weight: 700;
     color: var(--primary-white-color);
 }
  
-
                  /*Команда*/
 .team {
     background-color: #F5F4FA;
@@ -590,7 +589,7 @@ font-size: 16px;
                text-transform: uppercase;
     
         color:var(--primary-white-color);
-       
+     
 }
 .footer-social-list{
     display: flex;
