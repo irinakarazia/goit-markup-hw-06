@@ -621,10 +621,14 @@ font-size: 16px;
 .footer-mailing-list-container {
     margin-left: auto;
     }
-
+.footer-social-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
 .footer-form {
     display: flex;
-    gap: 12px;
     margin-top: 20px;
 }
 .footer-mailing-list-input {
@@ -658,6 +662,7 @@ font-size: 16px;
     width: 200px;
     height: 50px;
     padding: 10px;
+    margin-left: 12px;
     border: 1px solid transparent;
     border-radius: 4px;
     font-family: inherit;
@@ -728,7 +733,9 @@ font-size: 16px;
     cursor: pointer;
     transition: fill var(--transition-dur-and-func);
 }
-.modal-close-icon:hover {
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
     fill: var(--accent-color);
 }
 
@@ -749,8 +756,7 @@ font-size: 16px;
 }
 .modal-form-field-descr {
     display: block;
-    font-weight: 400;
-    font-size: 12px;
+       font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
@@ -782,12 +788,13 @@ font-size: 16px;
 }
 .modal-form-input:focus + .modal-form-imput-icon {
     fill: var(--accent-color);
-}
+   }
 .modal-form-comment {
     margin-bottom: 20px;
 }
 
 .modal-form-message {
+    display: block;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -812,6 +819,7 @@ font-size: 16px;
     text-align: center;
     justify-content: center;
     margin-bottom: 30px;
+    line-height: 1.71;
     color: var(--secondary-text-color);
   
 }
@@ -819,8 +827,8 @@ font-size: 16px;
     position: absolute;
     appearance: none;
 }
-.modal-form-own-checkbox {
-    margin-right: 8px;
+.modal-form-own-checkbox { 
+     margin-right: 8px;
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
@@ -828,6 +836,7 @@ font-size: 16px;
     cursor: pointer;
     transition: border-color var(--transition-dur-and-func);
 }
+
 .modal-form-own-checkbox-icon {
     display: none;
     fill: var(--primary-white-color);
@@ -839,7 +848,9 @@ font-size: 16px;
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
-
+.modal-form-check:focus+.modal-form-own-checkbox {
+    fill: var(--accent-color);
+}
 .contract {
     color: var(--accent-color);
 }
@@ -848,8 +859,7 @@ font-size: 16px;
     width: 200px;
     height: 50px;
     padding: 10px;
-    margin-bottom: 40px;
-    border: 1px solid transparent;
+        border: 1px solid transparent;
     border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
