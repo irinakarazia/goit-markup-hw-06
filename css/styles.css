@@ -734,8 +734,8 @@ font-size: 16px;
     transition: fill var(--transition-dur-and-func);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
     fill: var(--accent-color);
 }
 
@@ -821,8 +821,8 @@ font-size: 16px;
     margin-bottom: 30px;
     line-height: 1.71;
     color: var(--secondary-text-color);
-  
-}
+    cursor: pointer;
+  }
 .modal-form-check {
     position: absolute;
     appearance: none;
@@ -850,6 +850,7 @@ font-size: 16px;
 }
 .modal-form-check:focus+.modal-form-own-checkbox {
     fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 .contract {
     color: var(--accent-color);
